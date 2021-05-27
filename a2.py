@@ -218,7 +218,7 @@ def Count(group, dictionary):
     dictionary['y'] = Y
     dictionary['z'] = Z
 
-    return sorted(dictionary.items(), key=lambda kv: (kv[1], kv[0]))
+    return sorted(dictionary.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
     # A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 
 
