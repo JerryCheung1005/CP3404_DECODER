@@ -191,8 +191,35 @@ def Count(group, dictionary):
     for Zz in group:
         if Zz == 'z':
             Z += 1
+    dictionary['a'] = A
+    dictionary['b'] = B
+    dictionary['c'] = C
+    dictionary['d'] = D
+    dictionary['e'] = E
+    dictionary['f'] = F
+    dictionary['g'] = G
+    dictionary['h'] = H
+    dictionary['i'] = I
+    dictionary['j'] = J
+    dictionary['k'] = K
+    dictionary['l'] = L
+    dictionary['m'] = M
+    dictionary['n'] = N
+    dictionary['o'] = O
+    dictionary['p'] = P
+    dictionary['q'] = Q
+    dictionary['r'] = R
+    dictionary['s'] = S
+    dictionary['t'] = T
+    dictionary['u'] = U
+    dictionary['v'] = V
+    dictionary['w'] = W
+    dictionary['x'] = X
+    dictionary['y'] = Y
+    dictionary['z'] = Z
 
-    return A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+    return sorted(dictionary.items(), key=lambda kv: (kv[1], kv[0]))
+    # A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 
 
 print("First-----------------------")
@@ -210,45 +237,59 @@ print('sixth', f6)
 
 with open('CP3404ASSIGNEMTN2CLUSTERING.txt', 'a') as in_file:
     # 1
-    Count(a1)
+    Count(a1, aa)
     in_file.write("First-----------------------\n")
     in_file.write(str(a1))
     in_file.write('\n')
-    in_file.write(str(Count(a1)))
+    in_file.write(str(Count(a1, aa)))
+    in_file.write('\n')
+
     in_file.write('\n')
 
     # 2
-    Count(b2)
+    Count(b2, bb)
     in_file.write("Second----------------------\n")
     in_file.write(str(b2))
     in_file.write('\n')
-    in_file.write(str(Count(b2)))
+    in_file.write(str(Count(b2, bb)))
     in_file.write('\n')
+
+    in_file.write('\n')
+
     # 3
-    Count(c3)
+    Count(c3, cc)
     in_file.write("Third-----------------------\n")
     in_file.write(str(c3))
     in_file.write('\n')
-    in_file.write(str(Count(c3)))
+    in_file.write(str(Count(c3, cc)))
     in_file.write('\n')
+
+    in_file.write('\n')
+
     # 4
-    Count(d4)
+    Count(d4, dd)
     in_file.write("Fourth-----------------------\n")
     in_file.write(str(d4))
     in_file.write('\n')
-    in_file.write(str(Count(d4)))
+    in_file.write(str(Count(d4, dd)))
     in_file.write('\n')
+
+    in_file.write('\n')
+
     # 5
-    Count(e5)
+    Count(e5, ee)
     in_file.write("Fifth-----------------------\n")
     in_file.write(str(e5))
     in_file.write('\n')
-    in_file.write(str(Count(e5)))
+    in_file.write(str(Count(e5, ee)))
     in_file.write('\n')
+
+    in_file.write('\n')
+
     # 6
-    Count(f6)
+    Count(f6, ff)
     in_file.write("Sixth-----------------------\n")
     in_file.write(str(f6))
     in_file.write('\n')
-    in_file.write(str(Count(f6)))
+    in_file.write(str(Count(f6, ff)))
     in_file.write('\n')
