@@ -20,6 +20,13 @@ d4 = []
 e5 = []
 f6 = []
 
+aa = {}
+bb = {}
+cc = {}
+dd = {}
+ee = {}
+ff = {}
+
 # Part 1: Add into a list
 # 1
 for first in range(1000):
@@ -76,7 +83,9 @@ print(c3)
 print(d4)
 print(e5)
 print(f6)
-def Count(group):
+
+
+def Count(group, dictionary):
     A = 0
     B = 0
     C = 0
