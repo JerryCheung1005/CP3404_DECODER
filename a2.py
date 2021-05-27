@@ -222,7 +222,7 @@ print('fifth', e5)
 print("Sixth-----------------------")
 print('sixth', f6)
 
-with open('CP3404ASSIGNEMTN2CLUSTERING.txt', 'a') as in_file:
+with open('CNM_JB.txt', 'a') as in_file:
     # 1
     Count(a1, aa)
     in_file.write("First-----------------------\n")
