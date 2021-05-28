@@ -14,7 +14,7 @@ cc = {}
 dd = {}
 ee = {}
 ff = {}
-gg
+gg = {}
 
 # Part 1: Add into a list
 # 1
