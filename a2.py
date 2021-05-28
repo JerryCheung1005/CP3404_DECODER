@@ -234,7 +234,7 @@ print('sixth', f6)
 print('Seventh----------------------')
 print('seven', g7)
 
-with open('CP3404ASSIGNEMTN2CLUSTERING.txt', 'a') as in_file:
+with open('CNM.txt', 'a') as in_file:
     # 1
     Count(a1, aa)
     in_file.write("First-----------------------\n")
