@@ -6,7 +6,7 @@ c3 = []
 d4 = []
 e5 = []
 f6 = []
-g7 = []
+
 
 aa = {}
 bb = {}
@@ -14,13 +14,13 @@ cc = {}
 dd = {}
 ee = {}
 ff = {}
-gg = {}
+
 
 # Part 1: Add into a list
 # 1
 for first in range(1000):
     try:
-        if (first + 1) % 7 == 1:
+        if (first + 1) % 6 == 1:
             a1.append(string[first])
     except:
         pass
@@ -28,7 +28,7 @@ for first in range(1000):
 # 2
 for second in range(1000):
     try:
-        if (second + 1) % 7 == 2:
+        if (second + 1) % 6 == 2:
             b2.append(string[second])
     except:
         pass
@@ -36,7 +36,7 @@ for second in range(1000):
 # 3
 for third in range(1000):
     try:
-        if (third + 1) % 7 == 3:
+        if (third + 1) % 6 == 3:
             c3.append(string[third])
     except:
         pass
@@ -44,7 +44,7 @@ for third in range(1000):
 # 4
 for fourth in range(1000):
     try:
-        if (fourth + 1) % 7 == 4:
+        if (fourth + 1) % 6 == 4:
             d4.append(string[fourth])
     except:
         pass
@@ -52,7 +52,7 @@ for fourth in range(1000):
 # 5
 for fifth in range(1000):
     try:
-        if (fifth + 1) % 7 == 5:
+        if (fifth + 1) % 6 == 5:
             e5.append(string[fifth])
     except:
         pass
@@ -60,15 +60,8 @@ for fifth in range(1000):
 # 6
 for sixth in range(1000):
     try:
-        if (sixth + 1) % 7 == 6:
+        if (sixth + 1) % 6 == 0:
             f6.append(string[sixth])
-    except:
-        pass
-
-#or seventh in range(1000):
-    try:
-        if (sixth + 1) % 7 == 0:
-            g7.append(string[sixth])
     except:
         pass
 
@@ -79,7 +72,7 @@ print(c3)
 print(d4)
 print(e5)
 print(f6)
-peint(g7)
+
 
 
 def Count(group, dictionary):
@@ -231,8 +224,7 @@ print("Fifth-----------------------")
 print('fifth', e5)
 print("Sixth-----------------------")
 print('sixth', f6)
-print('Seventh----------------------')
-print('seven', g7)
+
 
 with open('CNM.txt', 'a') as in_file:
     # 1
@@ -293,8 +285,4 @@ with open('CNM.txt', 'a') as in_file:
     in_file.write(str(Count(f6, ff)))
     in_file.write('\n')
 
-    Count(f6, ff)
-    in_file.write("Seven-----------------------\n")
-    in_file.write(str(g7))
-    in_file.write('\n')
-    in_file.write(str(Count(g7, ff)))
+
